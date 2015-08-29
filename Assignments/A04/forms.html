@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam's Cool Website</title>
+
+    <style>
+        #sidebar {
+            line-height:30px;
+            height:505px;
+            width:24.2%;
+            float:left;
+        }
+        #lists {
+            width:75%;
+            float:left;
+            height:505px;
+        }
+        table {
+            width: 200px;
+        }
+        th {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <h2 style="text-align:center;border-style:double">Adam's Cool Website</h2>
+</div>
+
+<div id="navbar" style="border-style:double">
+    <a href="SimplePage.html">Home</a>
+    <a href="forms.html">Forms</a>
+</div>
+
+<div id="sidebar" style="text-align: center;border-style:double">
+    <h3>Forms Summary</h3>
+    <p>HTML supports several different types of input</p>
+</div>
+
+<div id="lists" style="border-style:double">
+    <h3>Forms Page</h3>
+    <p>The following is a text input:</p>
+    <form action="forms.html">
+        Username: <input type="text" name="username">
+        <br>
+        <br>
+        Then a password input:
+        <br>
+        <br>
+        Password: <input type="password" name="password">
+        <br>
+        <br>
+        Radio Buttons:
+        <br>
+        <br>
+        <input type="radio" name="sex1" value="male"> male
+        <br>
+        <input type="radio" name="sex2" value="female"> female
+        <br>
+        <br>
+        Checkboxes:
+        <br>
+        <br>
+        <input type="checkbox" name="os1" value="Windows"> Windows
+        <br>
+        <input type="checkbox" name="os2" value="OS X"> OS X
+        <br>
+        <input type="checkbox" name="os3" value="Linux"> Linux
+        <br>
+        <br>
+        <p>Submit button to send form data</p>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<footer style="border-style: double;width:100%">
+    <p style="text-align: center">Copyright (C) Adam Laimana</p>
+</footer>
+</body>
+</html>
