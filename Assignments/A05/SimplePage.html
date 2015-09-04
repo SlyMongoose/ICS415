@@ -4,34 +4,20 @@
     <meta charset="UTF-8">
     <title>Adam's Cool Website</title>
 
-    <style>
-    #sidebar {
-        line-height:30px;
-        height:700px;
-        width:24.2%;
-        float:left;
-    }
-    #lists {
-        width:75%;
-        float:left;
-        height:700px;
-    }
-    table {
-        width: 200px;
-    }
-    th {
-        text-align: center;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="layout.css">
 </head>
-<body>
-    <div id="header">
-        <h2 style="text-align:center;border-style:double">Adam's Cool Website</h2>
-    </div>
 
-    <div id="navbar" style="border-style:double">
-        <a href="SimplePage.html">Home</a>
-        <a href="forms.html">Forms</a>
+<body>
+    <header>
+        <h2>Adam's Cool Website</h2>
+    </header>
+
+    <div id="navbar">
+        <ul style="border-style:double">
+            <li><a href="SimplePage.html">Home</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="Three!.html">Three!</a></li>
+        </ul>
     </div>
 
     <div id="sidebar" style="text-align: center;border-style:double">
@@ -40,7 +26,7 @@
         <p>HTML supports three different types of lists: unordered, ordered, and description.</p>
     </div>
 
-    <div id="lists" style="border-style:double">
+    <div id="lists">
         <h3>Home Page</h3>
         <p>Tables:</p>
             <table>
@@ -78,10 +64,6 @@
             <li>Coffee</li>
             <li>Milk</li>
         </ul>
-        <ol>
-            <li>Coffee</li>
-            <li>Milk</li>
-        </ol>
         <dl>
             <dt>Coffee</dt>
             <dd>black hot drink</dd>
@@ -92,8 +74,10 @@
         navigation bar.</p>
         <p>the main section of the website takes up 75% of the page.  The left sidebar is center aligned.</p>
     </div>
-    <footer style="border-style: double;width:100%">
-        <p style="text-align: center">Copyright (C) Adam Laimana</p>
-    </footer>
+
+        <footer>
+            <p>Copyright (C) Adam Laimana</p>
+        </footer>
+
 </body>
 </html>
