@@ -1,0 +1,44 @@
+#title {
+  border-style: double;
+  text-align: center;
+  font-family: tangerine;
+  font-size: large;
+}
+
+#banner {
+  border-style: double;
+}
+
+#mainSection {
+ display:inline-block;
+  width:100%;
+}
+
+#login {
+  border-style: double;
+  position: static;
+  width:25%;
+  float:left;
+}
+
+#features {
+  border-style: double;
+  text-align: center;
+  width:25%;
+  float:left;
+}
+
+#sidebar {
+  border-style: double;
+  width: 25%;
+  float:left;
+}
+
+#news {
+  border-style: double;
+}
+
+#footer {
+  clear: both;
+  border-style: double;
+}

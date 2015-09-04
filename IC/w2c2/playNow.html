@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Semantic</title>
+  <title>Halepili</title>
+
+  <link rel="stylesheet" type="text/css" href="layout.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
 </head>
+
 <body>
-  <table>
-    <tr>
-      <td><header style="text-align: center">Lala, Juju, Abbey, and Titusey's cool Minecraft Page</header></td>
-    </tr>
+  <header id="title">Lala, Juju, Abbey, and Titusey's cool Minecraft Page</header>
 
-    <tr>
-      <td>
-        <nav>
-          <h1 style="text-align: center">Something here</h1>
-        </nav>
+  <nav id="banner">
+    <h1 style="text-align: center">Something here</h1>
+  </nav>
 
-        <section>
-          <h1>Cool stuff!</h1>
-        </section>
-      </td>
+  <div id="mainSection">
+    <form id="login" action="playNow.html" method="post">
+      Username: <input type="text" name="username">
+      <br>
+      <br>
+      Then a password input:
+      <br>
+      <br>
+      Password: <input type="password" name="password">
+      <br>
+      <br>
+      <p>Submit button to send form data</p>
+      <br>
+      <input type="submit" value="submit">
+    </form>
 
-      <td>
-        <form action="playNow.html" method="post">
-          <label for="username"> Username: </label>
-          <input type="text" name="username" id="username">
-          <br>
-          <br>
-          <label for="password"> Then a password input:</label>
-          <br>
-          <br>
-          Password: <input type="password" name="password" id="password">
-          <br>
-          <br>
-          <p>Submit button to send form data</p>
-          <br>
-          <input type="submit" value="submit">
-        </form>
-      </td>
+    <section id="features">
+      <h1>Cool stuff!</h1>
+    </section>
 
-      <td>
-        <aside>
-          <h1>Probably put pictures here, or articles</h1>
-        </aside>
+    <aside id="sidebar">
+      <h1>Probably put pictures here, or articles</h1>
+    </aside>
+  </div>
 
-        <article>
-          <p>Ops, nvm, lol</p>
-        </article>
-      </td>
-    </tr>
+  <article id="news">
+    <p>Ops, nvm, lol</p>
+  </article>
 
-    <tr>
-      <td>
-        <footer>
-          <p style="text-align: center">Copyright Ajat</p>
-        </footer>
-      </td>
-    </tr>
-  </table>
+  <footer id="footer">
+    <p style="text-align: center">Copyright Ajat</p>
+  </footer>
 </body>
 </html>
