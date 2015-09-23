@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example of Setting the Directions of Tabs</title>
+  <link rel="stylesheet" type="text/css" href="../bs/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="../bs/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="layout.css">
+
+  <script>
+    $(document).ready(function(){
+      $("#title").mouseenter(function(){
+        $(this).animate({left: "250px"});
+        $("#title4").load( "test.html #loaded" );
+      });
+
+      $("#title").mouseleave(function(){
+        $(this).animate({left: "0px"});
+      });
+
+      $("#title2").mouseenter(function(){
+        $(this).animate({left: "250px"});
+        $("#title4").load( "test.html #loaded2" );
+      });
+
+      $("#title2").mouseleave(function(){
+        $(this).animate({left: "0px"});
+      });
+
+      $("#title3").mouseenter(function(){
+        $(this).animate({left: "250px"});
+        $("#title4").load( "test.html #loaded3" );
+      });
+
+      $("#title3").mouseleave(function(){
+        $(this).animate({left: "0px"});
+      });
+
+      $("#title4").mouseenter(function(){
+        $(this).animate({left: "250px"});
+      });
+
+      $("#title4").mouseleave(function(){
+        $(this).animate({left: "0px"});
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+<div class="container-fluid">
+  <header>
+    <h1 class="text-center">Playing with Bootstrap!</h1>
+  </header>
+</div>
+
+<div id="title" style="background:#98bf21;height:100px;width:100px;position:relative;"></div>
+<div id="title2" style="background:#574839;height:100px;width:100px;position:relative;"></div>
+<div id="title3" style="background:#102938;height:100px;width:100px;position:relative;"></div>
+<div id="title4"></div>
+
+<div class="picturehere"></div>
+
+<div class="container-fluid">
+  <div class="bs-example">
+    <div class="tabbable">
+      <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="responsive.html">Home</a></li>
+        <li role="presentation"><a href="forms.html">Forms</a></li>
+        <li role="presentation"><a href="Three!.html">Three!</a></li>
+      </ul>
+     </div>
+  </div>
+</div>
+
+<div class="col-md-3">
+  <div id="sidebar" style="text-align: center;border-style:double">
+    <h3>Summary Window</h3>
+    <p>HTML supports tables</p>
+    <p>HTML supports three different types of lists: unordered, ordered, and description.</p>
+  </div>
+</div>
+
+<div class="col-md-9">
+  <div id="lists">
+    <h3>Home Page</h3>
+    <p>Tables:</p>
+    <table>
+      <caption style="text-align: center">Borderless Table</caption>
+      <tr>
+        <th colspan="2">Header 1</th>
+      </tr>
+      <tr>
+        <td>Row1.</td>
+        <td>Col 1</td>
+      </tr>
+    </table>
+    <br>
+    <table border="1">
+      <caption style="text-align: center">Bordered Table</caption>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+      <tr>
+        <td>Row 1. Col 1</td>
+        <td>Row 1. Col 2</td>
+      </tr>
+      <tr>
+        <td>Row 2. Col 1</td>
+        <td>Row 2. Col 2</td>
+      </tr>
+      <tr>
+        <td>Footer 1</td>
+        <td>Footer 2</td>
+      </tr>
+    </table>
+    <p>Lists:</p>
+    <ul>
+      <li>Coffee</li>
+      <li>Milk</li>
+    </ul>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>white cold drink</dd>
+    </dl>
+    <p>This web page has a two column layout with header, navigation bar, and footer.  There is a fairly large header narrow
+      navigation bar.</p>
+    <p>the main section of the website takes up 75% of the page.  The left sidebar is center aligned.</p>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <footer>
+    <p>Copyright (C) Adam Laimana</p>
+  </footer>
+</div>
+
+</body>
+</html>                                		
